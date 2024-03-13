@@ -1,39 +1,49 @@
 import React from 'react'
+import '../style/contact.css'
 
 export const Contact = () => {
   return (
-    <div>
-      <div className="main">
-        <div className="image">
-            <img src="book3.png" alt="img" width="60%" height="30%"/>
-            <div className="label">
-            <h1>Contact Us</h1>
-                <input type="text" id="firstname" name="ftname" placeholder= "Enter your name :" size="20" required/>   <br/><br/>
-                <input type="text" id="email" name="Email" placeholder= "Enter a valid email address :" size="20" required/> <br/><br/>
-                <input type="text" id="phone" name="Phone" placeholder="Phone Number" size="10" required/> <br/><br/>
-                Message : <br/>
-                <textarea cols="80" rows="7" value="Message"></textarea> 
-                <button onclick="SubmitEvent">SEND MESSAGE</button>
-            </div>
+    <div class = "wholeContainer">
+    <div class="contactcontainer">
+      <div class="contacttitle">Contact Us</div>
+      <form action="#">
+        <div class="contactrow">
+          <div class="contactform-group">
+            <input type="text" required id="firstname" />
+            <div class="contactunderline"></div>
+            <label for="firstname">First Name</label>
+          </div>
+          <div class="contactform-group">
+            <input type="text" required id="lastname" />
+            <div class="contactunderline"></div>
+            <label for="lastname">Last Name</label>
+          </div>
         </div>
-        <div className="icon">
-            <div className="map">
-                <img src="placeholder.png"/>
-                <p>Our&nbsp;Main&nbsp;Location</p>
-            </div>
-            <div className="phone">
-                <img src="telephone.png"/>
-                <p>Phone&nbsp;Number</p>
-            </div>
-            <div className="mail">
-                <img src="mail.png"/>
-                <p>E-&nbsp;Mail</p>
-            </div>
-            <div className="time">
-                <img src="alarm.png"/>
-                <p>Opening&nbsp;Time</p>
-            </div>
+        <div class="contactrow">
+          <div class="contactform-group">
+            <input type="text" required id="email" />
+            <div class="contactunderline"></div>
+            <label for="email">Email</label>
+          </div>
+          <div class="contactform-group">
+            <input type="text" required id="contact" />
+            <div class="contactunderline"></div>
+            <label for="contact">Contact No</label>
+          </div>
         </div>
+        <div class="contactrow">
+          <div class="contactform-group textarea">
+            <textarea required></textarea>
+            <div class="contactunderline"></div>
+            <label for="">Write your message</label>
+          </div>
+        </div>
+        <div class="contactrow">
+          <div class="contactform-group">
+            <input type="submit" value="Send Message" />
+          </div>
+        </div>
+      </form>
     </div>
     </div>
   )

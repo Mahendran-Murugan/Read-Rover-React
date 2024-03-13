@@ -1,28 +1,20 @@
-body{
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e1f8fc;
-}
-.hole1{
+
+.servicehole1{
     padding-bottom: 50px;
 }
-.main1{
+.servicemain1{
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
 }
-.images{
+.serviceimages{
     display: flex;
     flex-wrap: wrap;
 }
-.images h1{
+.serviceimages h1{
     color: black;
 }
-.images p{
+.serviceimages p{
     color: red;
 }
 span{
@@ -41,10 +33,10 @@ a:link{
 a:hover{
     color: orangered;
 }
-.images p{
+.serviceimages p{
     text-align: justify;
 }
-.img{
+.serviceimg{
     width: 330px;
     margin: 20px;
     padding: 20px;
