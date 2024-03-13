@@ -6,7 +6,7 @@ header{
     color: rgb(46, 103, 152) ;
 }
 
-.item1{
+.aboutitem1{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -15,26 +15,26 @@ header{
     padding-left: 50px;
     padding-right: 50px;
 }
-.subhead{
+.aboutsubhead{
    color:black;
    font-size:26px;
    line-height: 2 ;
    padding: 40px;
    font-family: 'Poiret One';
 }
-.description{
+.aboutdescription{
     text-align: justify;
     line-height: 30px;
     font-size: 16px;
     color: rgb(46, 46, 46);
     font-style: bold;
 }
-.item3{
+.aboutitem3{
     font-size: 20px;
     width:40%;
 }
 
-.head{
+.abouthead{
     font-size: 22px;
     color: red;
 }
