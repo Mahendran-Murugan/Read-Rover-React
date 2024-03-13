@@ -1,0 +1,80 @@
+*{
+    background-color: #e1f8fc;
+}
+.image img{
+    margin: 100px;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+.label{
+    margin-left: 500px;
+    margin-top: -600px;
+    color: #64153a;
+    font-weight: bold;
+}
+.label h1{
+    color: #52006A;
+}
+.label button{
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 700px;
+    padding: 10px;
+    color: rgb(85, 29, 87);
+}
+.icon .map img{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 350px;
+    width: 50px;
+    height: 50px;
+}
+.icon .map p{
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 260px;
+    width: 50px;
+    height: 50px;
+}
+.icon .phone img{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 610px;
+    width: 50px;
+    height: 50px;
+}
+.icon .phone p{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 585px;
+    width: 50px;
+    height: 50px;
+}
+.icon .mail img{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 880px;
+    width: 50px;
+    height: 50px;
+}
+.icon .mail p{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 880px;
+    width: 50px;
+    height: 50px;
+}
+.icon .time img{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 1150px;
+    width: 50px;
+    height: 50px;
+}
+.icon .time p{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 1127px;
+    width: 50px;
+    height: 50px;
+}
