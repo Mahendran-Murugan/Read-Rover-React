@@ -19,7 +19,7 @@ export const Home = () => {
                     <li className="items signin spl2"><Link href="/" className = "li">Discover</Link></li>
                 </div>
             </div>
-            <img src = {homeImage} alt= "homeImage" className = "centerImage"/>
+            <img src = {homeImage} alt= "homeImage" className = "centerImage" height = "555px"/>
         </div>
     </section>
     </>
