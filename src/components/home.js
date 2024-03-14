@@ -16,6 +16,7 @@ export const Home = () => {
     {context.redirected && context.changeStatus()}
     <ToastContainer/>
       <section>
+      {localStorage.getItem("user") !== "" && <h2 className=''>Welcome {localStorage.getItem("user")}</h2>}
         <div className="centerContainer">
             <div data-aos="fade-down" className="centerText">
                 <h1 className = "maintext">
@@ -26,7 +27,7 @@ export const Home = () => {
                     <li className="list splbtn spl2"><Link href="/" className = "items li2">Discover</Link></li>
                 </div>
             </div>
-            <img src = {homeImage} alt= "homeImage" data-aos="fade-down" className = "centerImage" height = "555px"/>
+            <img src = {homeImage} alt= "homeImage" data-aos="fade-down" className = "centerImage"/>
         </div>
     </section>
     </>

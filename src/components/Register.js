@@ -29,7 +29,7 @@ export const Register = () => {
                 <input type="text" value={user} onChange={(e)=>{setUser(e.target.value)}} placeholder="Username" id="username" />
                 <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" id="email" />
                 <input type="password" value={pass} onChange={(e)=>{setPass(e.target.value)}} placeholder="Password" id="password" />
-                <button type="submit" id="register-btn">login</button>
+                <button type="submit" id="register-btn">Register</button>
                 <p className="register-message register-login">
                   <span className ="logmes" >Already Have an Account? </span>
                   <span><NavLink className ="logli" to="/login">Login to an account</NavLink></span>
