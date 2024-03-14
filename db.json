@@ -23,6 +23,24 @@
       "name": "mahi",
       "email": "mahi@g.com",
       "pass": "mahi"
+    },
+    {
+      "id": "adb1",
+      "name": "hello",
+      "email": "hello@g.com",
+      "pass": "hello"
+    },
+    {
+      "id": "4968",
+      "name": "mahi",
+      "email": "21cs052@psr.edu.in",
+      "pass": "123"
+    },
+    {
+      "id": "c9cb",
+      "name": "bose",
+      "email": "21cs052@psr.edu.in",
+      "pass": "123"
     }
   ]
 }

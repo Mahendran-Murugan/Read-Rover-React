@@ -8,6 +8,7 @@ import { NavBar } from "./components/NavBar";
 import { Register } from "./components/Register";
 import { Auth } from "./components/Auth";
 import { Protect } from "./components/Protect";
+import { Logout } from "./components/Logout";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/logout" element={<Logout/>}/>
         </Routes>
       </Auth>
     </div>
