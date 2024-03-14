@@ -2,10 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png'
 import '../style/nav.css'
-import { useAuth } from './Auth';
 
 export const NavBar = () => {
-    const context = useAuth()
   return (
     <div className="container">
             <div className ="logo">
@@ -19,8 +17,8 @@ export const NavBar = () => {
                     <li className="list item3"><NavLink className="items" to="/contact" >Contact</NavLink></li>
                     <li className="list item3"><NavLink className="items" to="/service" >Service</NavLink></li>
                 </div>
-                {!context.user && <li className="spllist signin"><NavLink className = "li" to="/login" >Login</NavLink></li>}
-                {context.user && <li className="spllist signin"><NavLink className = "li" to="/logout" >Logout</NavLink></li>}
+                {!localStorage.getItem("user") && <li className="spllist signin"><NavLink className = "li" to="/login" >Login</NavLink></li>}
+                {localStorage.getItem("user") && <li className="spllist signin"><NavLink className = "li" to="/logout" >Logout</NavLink></li>}
                 
             </ul>
         </div>

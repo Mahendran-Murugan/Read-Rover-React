@@ -13,7 +13,6 @@ export const Login = () => {
     .catch(err=>console.log(err))
 },[])
 
-
     const navigate = useNavigate()
     const [email, setUser] = useState('')
     const [pass, setPass] = useState('')
@@ -26,20 +25,21 @@ export const Login = () => {
       )
       if(isUserValid){
         context.login(email)
+        context.changeStatus()
         navigate('/')
       }else{
         alert("User name or Password Not Match")
       }
     }
 
-  return (
-    <div className="login-parent">
+    return (
+      <div className="login-parent">
         <h1>Login Page</h1>
         <div className="login-form-div">
-            <form onSubmit={handleLogin} className="login-form">
+            <form className="login-form">
                 <input type="email" placeholder="Email" value={email} onChange={(e)=>{setUser(e.target.value)}} id="email" />
                 <input type="password" placeholder="Password" value={pass} onChange={(e)=>{setPass(e.target.value)}} id="password" />
-                <button type="submit" id="login-btn">login</button>
+                <button type="submit" id="login-btn"  onClick={handleLogin}>login</button>
                 <p className="login-message login-register">
                   <span className ="regmes" >Not registered? </span>
                   <span><NavLink className ="regli" to="/register">Create an account</NavLink></span>

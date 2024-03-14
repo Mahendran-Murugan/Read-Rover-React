@@ -1,12 +1,19 @@
 import React from 'react'
-import { NavBar } from './NavBar'
 import homeImage from '../assets/homeImage.png'
 import { Link } from 'react-router-dom'
 import '../style/home.css'
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import { useAuth } from './Auth'
+
 
 export const Home = () => {
+  const context = useAuth()
   return (
     <>
+    {context.redirected && toast("Login Successful....")}
+    {context.redirected && context.changeStatus()}
+    <ToastContainer/>
       <section>
         <div className="centerContainer">
             <div className="centerText">
