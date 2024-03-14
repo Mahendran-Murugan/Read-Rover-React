@@ -10,10 +10,6 @@ import book6 from '../assets/book8.png'
 export const Service = () => {
   return (
     <div className="servicehole1">
-        <div className="servicemain1">
-             <h1>Services</h1>
-        </div>
-        <hr/>
         <div className="serviceimages">
             <div className="serviceimg">
                 <img src={book1} alt="img1"/>

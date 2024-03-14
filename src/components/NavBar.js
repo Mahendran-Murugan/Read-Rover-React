@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png'
+import '../style/nav.css'
 
 export const NavBar = () => {
   return (
@@ -11,12 +12,12 @@ export const NavBar = () => {
             </div>
             <ul className = "navbar">
                 <div className = "it">
-                    <li className="items item1"><NavLink to="/">Home</NavLink></li>
-                    <li className="items item2"><NavLink to="/about" >About</NavLink></li>
-                    <li className="items item3"><NavLink to="/contact" >Contact</NavLink></li>
-                    <li className="items item3"><NavLink to="/service" >Service</NavLink></li>
+                    <li className="list item1"><NavLink className="items" to="/">Home</NavLink></li>
+                    <li className="list item2"><NavLink className="items" to="/about" >About</NavLink></li>
+                    <li className="list item3"><NavLink className="items" to="/contact" >Contact</NavLink></li>
+                    <li className="list item3"><NavLink className="items" to="/service" >Service</NavLink></li>
                 </div>
-                <li className="items signin spl"><NavLink to="/login" className = "li">Sign In</NavLink></li>
+                <li className="list signin"><NavLink to="/login" className = "items li">Sign In</NavLink></li>
             </ul>
         </div>
   )

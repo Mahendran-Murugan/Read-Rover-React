@@ -5,9 +5,6 @@ import aboutImage from '../assets/about.png'
 export const About = () => {
   return (
     <>
-      <header>
-        <h1>About Us</h1>
-    </header>
     <div className="aboutitem1">
         <div className="aboutitem3">
             <h1 className="abouthead">How it started</h1>

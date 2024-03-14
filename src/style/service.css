@@ -1,12 +1,11 @@
+body::-webkit-scrollbar{
+    display: none;
+}
 
 .servicehole1{
     padding-bottom: 50px;
 }
-.servicemain1{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-}
+
 .serviceimages{
     display: flex;
     flex-wrap: wrap;
