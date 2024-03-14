@@ -2,8 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;   
-    padding-top: 1rem;
+    align-items: center;  
     margin-right: 10px;
     margin-bottom: 30px;
 }
@@ -24,10 +23,13 @@
     color: rgb(28, 26, 26);
     font-weight: bold;
     border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .items.active{
     background-color: orangered;
+    color:white;
 }
 
 
@@ -45,8 +47,9 @@
 }
 
 
-.li1:hover{
+.li:hover{
     color: white;
+    background-color: orangered;
 }
 
 .signin{
@@ -56,6 +59,29 @@
     box-shadow: 1px 1px 1px 1px #c2c2c2;
 }
 
-.signin:hover{
-    background-color: tomato;
+.li{
+    padding: 1.1rem;
+    color: rgb(28, 26, 26);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.spllist{
+    list-style-type: none;
+}
+
+.spllist:hover{
+    background-color: orangered;
+}
+
+
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoimg{
+    height:125px;
 }

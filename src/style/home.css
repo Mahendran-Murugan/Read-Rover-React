@@ -5,28 +5,14 @@ body{
     background-color: #e1f8fc;
 }
 
-
-.logo{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-
 .title{
     color: rgb(16, 16, 16);
 }
-
-
 
 a{
     text-decoration: none;
     color: rgb(31, 29, 29);
 }
-
-
 
 .splbtn{
     border: 2px solid rgb(228, 17, 55);
