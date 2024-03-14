@@ -11,12 +11,13 @@ export const Home = () => {
   const context = useAuth()
   return (
     <>
+    {localStorage.getItem("user") !== "" && context.login(localStorage.getItem("user"))}
     {context.redirected && toast("Login Successful....")}
     {context.redirected && context.changeStatus()}
     <ToastContainer/>
       <section>
         <div className="centerContainer">
-            <div className="centerText">
+            <div data-aos="fade-down" className="centerText">
                 <h1 className = "maintext">
                     <p>Books</p> open doors <p>to worlds</p> we never knew <p>that existed...!</p>
                 </h1>
@@ -25,7 +26,7 @@ export const Home = () => {
                     <li className="list splbtn spl2"><Link href="/" className = "items li2">Discover</Link></li>
                 </div>
             </div>
-            <img src = {homeImage} alt= "homeImage" className = "centerImage" height = "555px"/>
+            <img src = {homeImage} alt= "homeImage" data-aos="fade-down" className = "centerImage" height = "555px"/>
         </div>
     </section>
     </>

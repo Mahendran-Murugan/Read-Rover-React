@@ -2,10 +2,12 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png'
 import '../style/nav.css'
+import { useAuth } from './Auth';
 
 export const NavBar = () => {
+    const context = useAuth()
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-down" >
             <div className ="logo">
                 <img className= "logoimg" alt= "logo" src={logo}/>
                 <h2 className = "title">Read Rover</h2>
@@ -17,8 +19,8 @@ export const NavBar = () => {
                     <li className="list item3"><NavLink className="items" to="/contact" >Contact</NavLink></li>
                     <li className="list item3"><NavLink className="items" to="/service" >Service</NavLink></li>
                 </div>
-                {!localStorage.getItem("user") && <li className="spllist signin"><NavLink className = "li" to="/login" >Login</NavLink></li>}
-                {localStorage.getItem("user") && <li className="spllist signin"><NavLink className = "li" to="/logout" >Logout</NavLink></li>}
+                {localStorage.getItem("user") === "" && !context.user && <li className="spllist signin"><NavLink className = "li" to="/login" >Login</NavLink></li>}
+                {localStorage.getItem("user") && context.user && <li className="spllist signin"><NavLink className = "li" to="/logout" >Logout</NavLink></li>}
                 
             </ul>
         </div>

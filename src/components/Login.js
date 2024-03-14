@@ -33,9 +33,9 @@ export const Login = () => {
     }
 
     return (
-      <div className="login-parent">
+      <div className="login-parent" data-aos="fade-down" >
         <h1>Login Page</h1>
-        <div className="login-form-div">
+        <div className="login-form-div"  data-aos="flip-left">
             <form className="login-form">
                 <input type="email" placeholder="Email" value={email} onChange={(e)=>{setUser(e.target.value)}} id="email" />
                 <input type="password" placeholder="Password" value={pass} onChange={(e)=>{setPass(e.target.value)}} id="password" />

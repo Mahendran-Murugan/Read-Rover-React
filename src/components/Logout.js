@@ -8,13 +8,13 @@ export const Logout = () => {
     const context = useAuth()
   return (
     <div className="logout-modal">
-      <h2 className='logout-text'>Are You Really Want to Logout?</h2>
+      <h2 className='logout-text' data-aos = "fade-in">Are You Really Want to Logout?</h2>
       <div className='logout-btns'>
-        <button className="logout-button" onClick={()=>{
+        <button className="logout-button"  data-aos = "fade-in" onClick={()=>{
             context.logout()
             navigate('/login')
             }}>Logout</button>
-        <button className="cancel-button">Cancel</button>
+        <button className="cancel-button" data-aos = "fade-in">Cancel</button>
       </div>
     </div>
   )

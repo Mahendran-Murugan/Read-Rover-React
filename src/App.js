@@ -6,13 +6,24 @@ import { Contact } from "./components/Contact";
 import { Login } from "./components/Login";
 import { NavBar } from "./components/NavBar";
 import { Register } from "./components/Register";
-import { Auth } from "./components/Auth";
+import { Auth, useAuth } from "./components/Auth";
 import { Protect } from "./components/Protect";
 import { Logout } from "./components/Logout";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import { ProtectLogout } from "./components/ProtectLogout";
+
 
 function App() {
+
+  useEffect(()=>{
+    Aos.init({
+      duration:1250,
+    })
+  })
+
   return (
-      
     <div className="App">
       <Auth>
         <NavBar/>
@@ -23,7 +34,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
-          <Route path="/logout" element={<Logout/>}/>
+          <Route path="/logout" element={<ProtectLogout><Logout/></ProtectLogout>}/>
         </Routes>
       </Auth>
     </div>

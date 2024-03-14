@@ -22,9 +22,9 @@ export const Register = () => {
     }
 
   return (
-    <div className="register-parent">
-        <h1 className="title-log-register">Register Here..!</h1>
-        <div className="register-form-div">
+    <div className="register-parent" >
+        <h1 className="title-log-register" data-aos="fade-down">Register Here..!</h1>
+        <div className="register-form-div" data-aos="flip-right">
             <form onSubmit={handleRegister} className="register-form">
                 <input type="text" value={user} onChange={(e)=>{setUser(e.target.value)}} placeholder="Username" id="username" />
                 <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" id="email" />
