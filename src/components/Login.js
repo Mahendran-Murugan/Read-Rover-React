@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { useAuth } from './Auth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, NavLink } from 'react-router-dom'
 import axios from 'axios'
 import '../style/login.css'
 
@@ -8,7 +8,7 @@ export const Login = () => {
 
   const [userlist, setUserList] = useState([])
   useEffect(()=>{
-    axios.get('http://localhost:3004/users')
+    axios.get('http://localhost:3001/users')
     .then(res=>setUserList(res.data))
     .catch(err=>console.log(err))
 },[])
@@ -37,7 +37,7 @@ export const Login = () => {
         <h1>Login Page</h1>
         <div className="login-form-div">
             <form onSubmit={handleLogin} className="login-form">
-                <input type="text" placeholder="Username" value={email} onChange={(e)=>{setUser(e.target.value)}} id="username" />
+                <input type="email" placeholder="Email" value={email} onChange={(e)=>{setUser(e.target.value)}} id="email" />
                 <input type="password" placeholder="Password" value={pass} onChange={(e)=>{setPass(e.target.value)}} id="password" />
                 <button type="submit" id="login-btn">login</button>
                 <p className="login-message login-register">

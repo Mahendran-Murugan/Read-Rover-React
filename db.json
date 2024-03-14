@@ -13,40 +13,16 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "Mahendran",
-      "email": "mahendran1482004@gmail.com",
-      "pass": "m2hi"
-    },
-    {
       "id": "2fd0",
       "name": "Rohan",
       "email": "rohan@gamil.com",
       "pass": "rohan"
     },
     {
-      "id": "fc69",
-      "name": "hello",
-      "email": "hello@gmail.com",
-      "pass": "hello"
-    },
-    {
-      "id": "55ef",
+      "id": "af76",
       "name": "mahi",
-      "email": "mahi@g.in",
+      "email": "mahi@g.com",
       "pass": "mahi"
-    },
-    {
-      "id": "d953",
-      "name": "Mahi",
-      "email": "mahi@12.com",
-      "pass": "m2hi"
-    },
-    {
-      "id": "7975",
-      "name": "Mahi",
-      "email": "mahendran@gmail.com",
-      "pass": "m2hi"
     }
   ]
 }

@@ -6,19 +6,26 @@ import { Contact } from "./components/Contact";
 import { Login } from "./components/Login";
 import { NavBar } from "./components/NavBar";
 import { Register } from "./components/Register";
+import { Auth } from "./components/Auth";
+import { Protect } from "./components/Protect";
+
 function App() {
   return (
+      
     <div className="App">
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/service" element={<Service/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
-      </Routes>
+      <Auth>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/service" element={<Protect><Service/></Protect>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+        </Routes>
+      </Auth>
     </div>
+
   );
 }
 
