@@ -5,6 +5,25 @@ body{
     background-color: #e1f8fc;
 }
 
+.home-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-txt{
+    color:rgba(255, 0, 0, 0.756);
+    font-size: 30px;
+}
+
+.username{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.86);
+    font-size: 30px;
+}
+
 .title{
     color: rgb(16, 16, 16);
 }

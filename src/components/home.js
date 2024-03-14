@@ -15,8 +15,7 @@ export const Home = () => {
     {context.redirected && toast("Login Successful....")}
     {context.redirected && context.changeStatus()}
     <ToastContainer/>
-      <section>
-      {localStorage.getItem("user") !== "" && <h2 className=''>Welcome {localStorage.getItem("user")}</h2>}
+      {localStorage.getItem("user") !== "" && <p className='welcome-txt'>Welcome Back <span className='username'>{localStorage.getItem("user")} ...!</span></p>}
         <div className="center-container">
             <div data-aos="fade-down" className="centerText">
                 <h1 className = "maintext">
@@ -29,7 +28,6 @@ export const Home = () => {
             </div>
             <img src = {homeImage} alt= "homeImage" data-aos="fade-down" className = "centerImage"/>
         </div>
-    </section>
     </div>
   )
 }
