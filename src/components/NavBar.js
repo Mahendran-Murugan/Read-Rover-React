@@ -7,7 +7,7 @@ import { useAuth } from './Auth';
 export const NavBar = () => {
     const context = useAuth()
   return (
-    <div className="container" data-aos="fade-down" >
+    <div className="nav-container" data-aos="fade-down" >
             <div className ="logo">
                 <img className= "logoimg" alt= "logo" src={logo}/>
                 <h2 className = "title">Read Rover</h2>

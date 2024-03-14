@@ -22,7 +22,7 @@ export const Auth = ({children}) => {
     }
 
   return (
-    <div>
+    <div className='auth-container'>
         <AuthContext.Provider value={{user, login, logout, redirected, changeStatus}}>
             {children}
         </AuthContext.Provider>

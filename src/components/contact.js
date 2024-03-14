@@ -3,8 +3,7 @@ import '../style/contact.css'
 
 export const Contact = () => {
   return (
-    <div class = "wholeContainer" data-aos="fade-up" >
-    <div class="contactcontainer">
+    <div class="contact-container" data-aos="fade-up" >
       <div class="contacttitle">Contact Us</div>
       <form action="#">
         <div class="contactrow">
@@ -44,7 +43,6 @@ export const Contact = () => {
           </div>
         </div>
       </form>
-    </div>
     </div>
   )
 }

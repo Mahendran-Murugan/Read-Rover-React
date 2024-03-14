@@ -29,6 +29,12 @@
       "name": "bose",
       "email": "21cs021@psr.edu.in",
       "pass": "bose"
+    },
+    {
+      "id": "77f3",
+      "name": "mahi",
+      "email": "mahi@gamil.com",
+      "pass": "mahi"
     }
   ]
 }

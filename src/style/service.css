@@ -1,41 +1,49 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-.servicehole1{
+.service-parent {
     padding-bottom: 50px;
 }
 
-.serviceimages{
+.serviceimages {
     display: flex;
     flex-wrap: wrap;
 }
-.serviceimages h1{
+
+.serviceimages h1 {
     color: black;
 }
-.serviceimages p{
+
+.serviceimages p {
     color: red;
 }
-span{
+
+span {
     color: #f3701d;
     font-size: 30px;
     margin-top: -7px;
 }
-a{
+
+a {
     text-decoration: none;
     list-style-type: none;
     display: flex;
 }
-a:link{
-    color:blue;
+
+a:link {
+    color: blue;
 }
-a:hover{
+
+a:hover {
     color: orangered;
 }
-.serviceimages p{
+
+.serviceimages p {
     text-align: justify;
 }
-.serviceimg{
+
+.serviceimg {
     width: 330px;
     margin: 20px;
     padding: 20px;

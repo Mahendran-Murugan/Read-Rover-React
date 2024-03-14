@@ -8,6 +8,6 @@ export const Protect = ({children}) => {
         return <Navigate to = '/login'/>
     }
   return (
-    <div>{children}</div>
+    <div className='protect'>{children}</div>
   )
 }

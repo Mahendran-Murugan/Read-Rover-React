@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-.aboutitem1{
+.about-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;

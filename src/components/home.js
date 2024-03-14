@@ -10,14 +10,14 @@ import { useAuth } from './Auth'
 export const Home = () => {
   const context = useAuth()
   return (
-    <>
+    <div className='home-container'>
     {localStorage.getItem("user") !== "" && context.login(localStorage.getItem("user"))}
     {context.redirected && toast("Login Successful....")}
     {context.redirected && context.changeStatus()}
     <ToastContainer/>
       <section>
       {localStorage.getItem("user") !== "" && <h2 className=''>Welcome {localStorage.getItem("user")}</h2>}
-        <div className="centerContainer">
+        <div className="center-container">
             <div data-aos="fade-down" className="centerText">
                 <h1 className = "maintext">
                     <p>Books</p> open doors <p>to worlds</p> we never knew <p>that existed...!</p>
@@ -30,6 +30,6 @@ export const Home = () => {
             <img src = {homeImage} alt= "homeImage" data-aos="fade-down" className = "centerImage"/>
         </div>
     </section>
-    </>
+    </div>
   )
 }
