@@ -1,16 +1,4 @@
 {
-  "students": [
-    {
-      "id": "1",
-      "name": "Mahendran",
-      "age": "19"
-    },
-    {
-      "id": "2",
-      "name": "Mahi",
-      "age": "20 "
-    }
-  ],
   "users": [
     {
       "id": "2fd0",
@@ -19,21 +7,9 @@
       "pass": "rohan"
     },
     {
-      "id": "e901",
-      "name": "bose",
-      "email": "rohan@gmail.com",
-      "pass": "rohan"
-    },
-    {
-      "id": "9d17",
-      "name": "bose",
-      "email": "21cs021@psr.edu.in",
-      "pass": "bose"
-    },
-    {
-      "id": "77f3",
+      "id": "4d86",
       "name": "mahi",
-      "email": "mahi@gamil.com",
+      "email": "mahi@g.com",
       "pass": "mahi"
     }
   ],
@@ -42,13 +18,24 @@
       "id": "2",
       "body": "Bob from bar down the \n\n- Take out trash\n- Eat food",
       "created": "2021-07-13T00:17:13.289897Z",
-      "updated": "2024-03-15T04:15:10.129Z"
+      "updated": "2024-03-15T04:56:30.359Z"
     },
     {
       "id": "3",
       "body": "Wash car",
       "updated": "2021-07-13T19:46:12.187306Z",
       "created": "2021-07-13T00:16:22.399841Z"
+    },
+    {
+      "id": "b7d4",
+      "body": "Hello World",
+      "updated": "2024-03-15T04:54:59.950Z"
+    },
+    {
+      "id": "69e9",
+      "created": "2024-03-15T05:00:08.360Z",
+      "updated": "2024-03-15T05:00:17.967Z",
+      "body": "Hello"
     }
   ]
 }

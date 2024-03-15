@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
 import axios from 'axios'
+import '../style/bookpage.css'
 
 export const BookPage = () => {
 
@@ -13,7 +14,6 @@ export const BookPage = () => {
 
     useEffect(() => {
         getBook()
-
     }, [id])
 
     const getBook = async () => {
@@ -30,7 +30,11 @@ export const BookPage = () => {
 
 
     const createBook = async () => {
-        await axios.post(`http://localhost:3001/books/`)
+        await axios.post(`http://localhost:3001/books/`,{
+            'created':new Date(),
+            'updated':new Date(),
+            'body':book?.body,
+        })
     }
 
     const updateBook = async () => {
@@ -71,9 +75,9 @@ export const BookPage = () => {
                         <ArrowLeft onClick={handleSubmit} />
                     </Link>
                 </h3>
-                <button onClick={deleteBook}>Delete</button>
+                <button onClick={deleteBook} className='delete-button'>Delete</button>
             </div>
-            <textarea value={book?.body} onChange={(e) => { setBook({ ...book, 'body': e.target.value }) }} />
+            <textarea value={book?.body} onChange={(e) => { setBook({ ...book, 'body': e.target.value }) } } className='textarea' />
         </div>
     )
 }

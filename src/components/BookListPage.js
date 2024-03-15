@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ListItem } from './ListItem'
 import axios from 'axios'
+import '../style/booklistpage.css'
 import {AddButton} from './AddButton'
 
 export const BookListPage = () => {
@@ -28,11 +29,13 @@ export const BookListPage = () => {
                 <h2 className='books-title'>&#9782; Books</h2>
                 <p className='books-length'>{books.length}</p>
             </div>
+            <hr/>
             <div className='book-list'>
                 {books.map((book, index) => (
                     <ListItem key={index} book={book} />
                 ))}
             </div>
+            
         </div>
     )
 }

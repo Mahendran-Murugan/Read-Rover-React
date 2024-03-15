@@ -40,6 +40,17 @@ a{
     box-shadow: 1px 1px 1px 1px #c2c2c2;
 }
 
+
+.itemsspl{
+    padding: 1.1rem;
+    color: rgb(28, 26, 26);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
 .splbtn:hover{
     background-color: tomato;
 }
