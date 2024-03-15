@@ -35,9 +35,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/service" element={<Protect><Service /></Protect>} />
           <Route path="/about" element={<About />} />
-          <Route path="/book" element={<Book />}>
+          <Route path="/blog" element={<Book />}>
             <Route index element={<BookListPage />} />
-            <Route path="booklist" element={<BookListPage />} />
+            <Route path="bloglist" element={<BookListPage />} />
             <Route path=":id" element={<BookPage />} />
           </Route>
           <Route path="*" element={<NoRoute/>}/>

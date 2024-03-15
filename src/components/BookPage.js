@@ -19,7 +19,7 @@ export const BookPage = () => {
     const getBook = async () => {
         console.log(id)
         try {
-            const response = await fetch(`http://localhost:3001/books/${id}`)
+            const response = await fetch(`http://localhost:3001/blogs/${id}`)
             const data = await response.json()
             setBook(data)
         }
@@ -30,15 +30,16 @@ export const BookPage = () => {
 
 
     const createBook = async () => {
-        await axios.post(`http://localhost:3001/books/`,{
+        await axios.post(`http://localhost:3001/blogs/`,{
             'created':new Date(),
             'updated':new Date(),
+            'title': book?.title,
             'body':book?.body,
         })
     }
 
     const updateBook = async () => {
-        await fetch(`http://localhost:3001/books/${id}`, {
+        await fetch(`http://localhost:3001/blogs/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +61,7 @@ export const BookPage = () => {
 
     const deleteBook = async () => {
         try {
-            const response = await axios.delete(`http://localhost:3001/books/${id}`)
+            const response = await axios.delete(`http://localhost:3001/blogs/${id}`)
         } catch (e) {
             console.log(e)
         }
@@ -71,12 +72,13 @@ export const BookPage = () => {
         <div className='book'>
             <div className='note-header'>
                 <h3>
-                    <Link to='/book'>
+                    <Link to='/blog'>
                         <ArrowLeft onClick={handleSubmit} />
                     </Link>
                 </h3>
                 <button onClick={deleteBook} className='delete-button'>Delete</button>
             </div>
+            <input type='text' value={book?.title} onChange={(e)=>{setBook({ ...book, 'title': e.target.value }) } } className='titleField'/>
             <textarea value={book?.body} onChange={(e) => { setBook({ ...book, 'body': e.target.value }) } } className='textarea' />
         </div>
     )

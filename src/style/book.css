@@ -1,0 +1,6 @@
+.book-main-container{
+    display: felx;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}

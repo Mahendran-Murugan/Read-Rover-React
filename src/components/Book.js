@@ -1,11 +1,10 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { Header } from './Header'
+import '../style/book.css'
 
 export const Book = () => {
     return (
-        <div className='book-container'>
-            <Header />
+        <div className='book-main-container'>
             <div className='app'>
                 <Outlet />
             </div>
