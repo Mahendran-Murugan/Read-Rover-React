@@ -46,7 +46,7 @@ export const BookPage = () => {
     const handleSubmit = () => {
         if (id !== 'new' && !book.body) {
             deleteBook()
-        } else if( id === 'new') {
+        } else if( id != 'new') {
             updateBook()
         } else if(id == 'new' && book !== null){
             createBook()

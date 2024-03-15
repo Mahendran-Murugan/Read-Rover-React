@@ -22,7 +22,7 @@ export const Home = () => {
             <p>Books</p> open doors <p>to worlds</p> we never knew <p>that existed...!</p>
           </h1>
           <div className="centerbtn">
-            <li className="list splbtn spl1"><Link to="/" className="items li2">Get Started</Link></li>
+            <li className="list splbtn spl1"><Link to="/book" className="items li2">Get Started</Link></li>
             <li className="list splbtn spl2"><Link href="/" className="items li2">Discover</Link></li>
           </div>
         </div>
