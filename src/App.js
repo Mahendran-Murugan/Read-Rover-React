@@ -17,6 +17,9 @@ import { BookListPage } from "./components/BookListPage";
 import { BookPage } from "./components/BookPage";
 import { Book } from "./components/Book";
 import { NoRoute } from "./components/NoRoute";
+import { BookListPage2 } from "./components/BookListPage2";
+import { Book2 } from "./components/Book2";
+import { BookPage2 } from "./components/BookPage2";
 
 
 function App() {
@@ -35,7 +38,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/service" element={<Protect><Service /></Protect>} />
           <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Book />}>
+          <Route path="/book" element={<Protect><Book2 /></Protect>} >
+            <Route index element={<BookListPage2 />} />
+            <Route path="booklist" element={<BookListPage2 />} />
+            <Route path="create-book" element={<BookPage2 />} />
+          </Route>
+          <Route path="/blog" element={<Protect><Book /></Protect>}>
             <Route index element={<BookListPage />} />
             <Route path="bloglist" element={<BookListPage />} />
             <Route path=":id" element={<BookPage />} />

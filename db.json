@@ -11,21 +11,41 @@
       "name": "mahi",
       "email": "mahi@g.com",
       "pass": "mahi"
+    },
+    {
+      "id": "8c02",
+      "name": "bose2512",
+      "email": "21cs021@psr.edu.in",
+      "pass": "1234"
     }
   ],
   "blogs": [
     {
-      "body": "Hello",
-      "title": "History",
-      "updated": "2024-03-15T05:49:21.437Z",
-      "id": "18d1"
+      "id": "3244",
+      "created": "2024-03-16T09:35:26.476Z",
+      "updated": "2024-03-16T09:35:33.844Z",
+      "title": "movie",
+      "body": "eszxdfcghj"
+    }
+  ],
+  "books": [
+    {
+      "id": 0,
+      "title": "Hello",
+      "booklink": "https://www.google.com",
+      "bookdescription": "This is a Random Book"
     },
     {
-      "id": "4c30",
-      "created": "2024-03-15T05:49:18.699Z",
-      "updated": "2024-03-15T05:49:22.996Z",
-      "title": "Crime Scene",
-      "body": "Hello"
+      "id": "ece9",
+      "title": "Hello Python",
+      "booklink": "https://static.realpython.com/python-basics-sample-chapters.pdf",
+      "bookdescription": "This is a Python Book"
+    },
+    {
+      "id": "9262",
+      "title": "html",
+      "booklink": "https://www.dcpehvpm.org/E-Content/BCA/BCA-II/Web%20Technology/the-complete-reference-html-css-fifth-edition.pdf",
+      "bookdescription": "basic html book"
     }
   ]
 }

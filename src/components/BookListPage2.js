@@ -3,8 +3,9 @@ import { ListItem } from './ListItem'
 import axios from 'axios'
 import '../style/booklistpage.css'
 import { useNavigate } from 'react-router-dom'
+import { ListItem2 } from './ListItem2'
 
-export const BookListPage = () => {
+export const BookListPage2 = () => {
 
     const navigate = useNavigate()
 
@@ -16,7 +17,7 @@ export const BookListPage = () => {
 
     const getBooks = async () => {
         try {
-            const response = await axios.get("http://localhost:3001/blogs/")
+            const response = await axios.get("http://localhost:3001/books/")
             setBooks(response.data)
         } catch (e) {
             console.log(e)
@@ -24,22 +25,22 @@ export const BookListPage = () => {
     }
 
     const handleAddBookClick = () =>{
-        navigate('/blog/new')
+        navigate('create-book')
     }
 
     return (
         <div className='books'>
             <div className='books-header'>
-                <h2 className='books-title'>&#9782; Blogs</h2>
+                <h2 className='books-title'>&#9782; Books</h2>
                 <p className='books-length'>{books.length}</p>
             </div>
             <hr/>
             <div className='book-list'>
                 {books.map((book, index) => (
-                    <ListItem key={index} book={book} />
+                    <ListItem2 key={index} book={book} />
                 ))}
             </div>
-            <button onClick={handleAddBookClick} className='add-book-button'>Add Blog</button>
+            <button onClick={handleAddBookClick} className='add-book-button'>Add Book</button>
         </div>
     )
 }

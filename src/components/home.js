@@ -23,7 +23,7 @@ export const Home = () => {
           </h1>
           <div className="centerbtn">
             <li className="spllist splbtn spl1"><Link to="/blog" className="itemsspl li2">Get Started</Link></li>
-            <li className="spllist splbtn spl2"><Link href="/" className="itemsspl li2">Discover</Link></li>
+            <li className="spllist splbtn spl2"><Link to="/book" className="itemsspl li2">Discover</Link></li>
           </div>
         </div>
         <img src={homeImage} data-aos="fade-down" alt="homeImage" className="centerImage" />
