@@ -5,7 +5,7 @@ export const ListItem = ({book}) => {
   return (
     <>
     <Link to={`/blog/${book.id}`}>
-        <div className='books-list-item'>
+        <div className='books-list-item-2'>
             <h3>{book.title}</h3>
         </div>
     </Link>

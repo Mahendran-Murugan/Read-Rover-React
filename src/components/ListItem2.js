@@ -1,16 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import img from '../assets/about.png'
+import '../style/listitem2.css'
 
-export const ListItem2 = ({book}) => {
+export const ListItem2 = ({ book }) => {
   return (
-    <>
-    <a href= {book.booklink} target='_blank'>
+    <div className='list-item-container'>
+      <img src={book.bookimg} className='image-book' />
+      <a href={book.booklink} target='_blank'>
         <div className='books-list-item'>
-            <h3>{book.title}</h3>
+          <h3>{book.title}</h3>
         </div>
-    </a>
-    <p>{book.bookdescription}</p>
-    <hr className='books-hr' />
-    </>
+      </a>
+      <p>{book.bookdescription}</p>
+    </div>
   )
 }

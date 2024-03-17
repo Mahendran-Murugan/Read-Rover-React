@@ -1,66 +1,67 @@
 .books {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f5f5f5;
-    align-items: center;
-  }
-  
-  .books-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .books-title {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .books-length {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #666;
-  }
-  
-  .book-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 800px;
-  }
-  .books-hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    width: 100%;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  align-items: center;
+}
 
-  .add-book-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 40px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .add-book-button:hover {
-    background-color: #0069d9;
-  }
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.books-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.books-length {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.books-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add-book-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-book-button:hover {
+  background-color: #0069d9;
+}
