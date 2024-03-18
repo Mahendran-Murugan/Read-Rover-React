@@ -30,7 +30,7 @@ export const BookListPage = () => {
     return (
         <div className='books'>
             <div className='books-header'>
-                <h2 className='books-title'>&#9782; Blogs</h2>
+                <h2 className='books-title'>Blogs</h2>
                 <p className='books-length'>{books.length}</p>
             </div>
             <hr/>

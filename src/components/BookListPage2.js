@@ -31,11 +31,11 @@ export const BookListPage2 = () => {
     return (
         <div className='books'>
             <div className='books-header'>
-                <h2 className='books-title'>&#9782; Books</h2>
+                <h2 className='books-title'>Books</h2>
                 <p className='books-length'>{books.length}</p>
             </div>
             <hr/>
-            <div className='book-list'>
+            <div className='book-list-2'>
                 {books.map((book, index) => (
                     <ListItem2 key={index} book={book} />
                 ))}

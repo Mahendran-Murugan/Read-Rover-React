@@ -4,7 +4,7 @@ import '../style/listitem2.css'
 
 export const ListItem2 = ({ book }) => {
   return (
-    <div className='list-item-container'>
+    <div className='list-item-container' data-aos="fade-down">
       <img src={book.bookimg} className='image-book' />
       <a href={book.booklink} target='_blank'>
         <div className='books-list-item'>

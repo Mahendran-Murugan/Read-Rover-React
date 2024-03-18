@@ -15,7 +15,7 @@ export const Home = () => {
       {context.redirected && toast("Login Successful....")}
       {context.redirected && context.changeStatus()}
       <ToastContainer />
-      {localStorage.getItem("user") !== "" && localStorage.getItem("user") != null && <p className='welcome-txt' data-aos='fade-down'>Welcome Back <span className='username'>{localStorage.getItem("user")} ...!</span></p>}
+      {localStorage.getItem("user") !== "" && localStorage.getItem("user") != null && <p className='welcome-txt'>Welcome Back <span className='username'>{localStorage.getItem("user")} ...!</span></p>}
       <div className="center-container">
         <div data-aos="fade-down" className="centerText">
           <h1 className="maintext">

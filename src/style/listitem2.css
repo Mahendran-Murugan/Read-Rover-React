@@ -1,13 +1,15 @@
 .list-item-container {
-    background-color: lightgray;
+    background-color: rgb(253, 245, 245);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px black;
 }
 
 .image-book {
-    height: 200px;
-    width: 200px;
+    height: 225px;
+    width: 225px;
 }
